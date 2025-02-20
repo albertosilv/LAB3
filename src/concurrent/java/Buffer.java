@@ -14,7 +14,7 @@ class Buffer {
         }
     }
     
-    public synchronized int remove() {
+    public  int remove() {
         synchronized (lock) {
             if (!data.isEmpty()) {
                 int value = data.remove(0);
